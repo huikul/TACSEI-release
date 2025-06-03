@@ -1,0 +1,12 @@
+
+dataset_normalization:
+  flg_force_refresh: True    # True -> re-normalize no matter if it has been done
+  max_tac_value: 2000.0
+  min_tac_value: 0.0
+  max_air_pressure: 1500.0
+  min_air_pressure: 0.0
+  max_marker_pos: 0.15
+  min_marker_pos: -0.15
+  dir_save_new: None    # None   if save to original dir    example"/homeL/XXX/dataSSD/example"
+
+

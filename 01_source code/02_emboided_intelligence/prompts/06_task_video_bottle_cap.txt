@@ -1,0 +1,27 @@
+3. Task description:
+Based on the demostration result, generate signal sequences for each finger—Thumb (TH), First Finger (FF), and Middle Finger (MF)—to __rotate__ a bottle cap for either __opening or closing__.
+
+3.1 Signal Arrays:
+Save the air pressure values for each finger in separate arrays:
+    a) __sig_th for the Thumb__
+    b) __sig_ff for the First Finger__
+    c) __sig_mf for the Middle Finger__
+    d) return only excutable Python code to generate the sequences, without useless strings.
+
+3.2 Sequence Properties:
+    a) The length of signal sequence for each finger must be the 500.
+    b) Air pressure values should remain within the range of __0 to 0.64__ bar.
+    c) The signal sequences for related fingers must contain cyclic variations in air pressure.
+    d) Each cycle must consist of 20 data points for smooth air pressure modulation.
+
+3.3 Considering the space relationship between the soft hand and bottle cap:
+    a) __Open: Rotate toward the Thumb (TH)__.
+    b) __Close: Rotate toward the First Finger (FF)__.
+    c) Using the __Rotation Strategy__ in previous prompt in __2.3.7__ to achieve the rotation.
+    
+3.4 Expected Behavior:
+    a) Introduce cyclic variations in the air pressure of TH and FF to generate rotational torque, maintaining grip stability.
+    b) Ensure that the force/torque applied by TH and FF is coordinated to rotate the object in the required direction __opening or closing__ as the demostration result.
+    
+    
+    

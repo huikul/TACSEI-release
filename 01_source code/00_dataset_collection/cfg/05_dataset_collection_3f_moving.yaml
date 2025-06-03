@@ -1,0 +1,29 @@
+work_mode:
+  test_mode: True
+
+serial_port:
+  port: "/dev/ttyUSB0"
+  port_jetson: "/dev/ttyUSB1"
+  # port_jetson: "/dev/ttyCH341USB0"
+  # port_jetson: "/dev/ttyTHS1"
+  baudrate: 921600
+
+dataset_collection:
+  name_obj: redhat
+  size_obj: 90    # mm, int
+  min_air: 190  # int 0-1000 -> 0-2 bar     # typical 200~320   50~190
+  max_air: 280  # int 0-1000
+  step_air: 10  # int
+  loop_per_airsetp: 15    # int            # typical 30        20       15
+  frequency: 10     # sample times per second
+  save_dir: "/homeL/XXX/dataSSD/tamser_tactile_dataset_unknown_new/05_finger_moving/"
+  # to check the completeness of data
+  num_markers: 16
+  row_tac_array: 9    # 9*4 tactile array
+  col_tac_array: 4
+  num_fing_press: 3 # 3 fingers with 3-channel air pressure
+  max_tac_value: 2000.0
+  min_tac_value: 0.0
+  min_len_data: 2
+
+

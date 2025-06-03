@@ -1,0 +1,6 @@
+1. Focusing on a reference part on the **upper body of object**,
+
+2. **Clockwise**: The reference part moves from top to right of the view.
+
+3. **Counterclockwise**: The reference part moves from top to left of the view.
+

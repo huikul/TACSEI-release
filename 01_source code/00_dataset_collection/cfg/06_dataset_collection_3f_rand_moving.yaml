@@ -1,0 +1,29 @@
+work_mode:
+  test_mode: True
+
+serial_port:
+  port: "/dev/ttyUSB0"
+  port_jetson: "/dev/ttyUSB1"
+  # port_jetson: "/dev/ttyCH341USB0"
+  # port_jetson: "/dev/ttyTHS1"
+  baudrate: 921600
+
+dataset_collection:
+  name_obj: orange
+  size_obj: 90    # cm, int
+  min_air: 200  # int 0-1000
+  max_air: 320  # int 0-1000
+  max_iter_air_change: 20  # int     how many times the air pressure will be randomly changed
+  seed_rand: 42  # set < 0 to disable the random seed
+  loop_per_airsetp: 20    # int      how many dataset will be collected for each different air conditions
+  save_dir: "/homeL/XXX/dataSSD/tamser_tactile_dataset/06_finger_rand_moving/"
+
+  # to check the completeness of data
+  num_markers: 16
+  row_tac_array: 9    # 9*4 tactile array
+  col_tac_array: 4
+  num_fing_press: 3 # 3 fingers with 3-channel air pressure
+  max_tac_value: 2000.0
+  min_tac_value: 0.0
+  min_len_data: 2
+

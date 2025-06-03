@@ -1,0 +1,8 @@
+__Steps to analyze clockwise and counterclockwise motions:__
+    a) Process the video to extract representative frames.
+    b) Compare the __orientation of the symbol 'A'__ across successive frames.
+    c) Identify whether the object rotates clockwise or counterclockwise.
+    d) Explain the reasoning behind your conclusion, including any visual or positional changes observed.
+    
+    
+    

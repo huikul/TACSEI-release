@@ -1,0 +1,7 @@
+
+dataset_separate:
+  flg_delete_previous_data: True    # True -> delete the previous data in the dir_save_new
+  dir_save_new: "/homeL/XXX/dataSSD/tamser_dataset_unkownnew_sep_frames/"    # None   if save to original dir    example"/homeL/XXX/dataSSD/example"
+  frames_new_save: 1 # how many frame will be contained for each seperated data
+
+

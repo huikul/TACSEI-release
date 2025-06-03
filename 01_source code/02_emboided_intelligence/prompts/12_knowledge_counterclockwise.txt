@@ -1,0 +1,6 @@
+1. All makers, labels and symbols on the object rotate towards the same direction with the object.
+
+2. **Clockwise**: a marker on the object rotates from top to right, then bottom, then left.
+
+3. **Counterclockwise**: a marker on the object rotates from top to left, then bottom, then right.
+

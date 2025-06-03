@@ -1,0 +1,41 @@
+2. Hardware description:
+
+2.1 Gripper Design:
+2.1.1 The gripper is a humanoid right hand in a pre-grasp pose with three soft, silicone fingers:
+   a) Thumb (TH): Positioned on the right side of the palm.
+   b) First Finger (FF): Positioned on the left side of the plam.
+   c) Middle Finger (MF): Positioned below the FF, on the same side.
+2.1.2 The TH and FF are opposite each other, while the MF aligns directionally with the FF.
+2.1.3 Each finger has multiple air chambers that can be independently actuated using compressed air.
+2.1.4 Action Mechanism: Inflating the chambers with compressed air causes the fingers to bend inward, enabling them to grasp objects.
+
+2.2 Sensing ability:
+2.2.1 Each finger has a 4x8 tactile sensor array on its surface towards the target object to detect contact forces when interacting with an object.
+2.2.2 Sensors embedded between the air chambers measure forces generated during inflation, providing real-time feedback on finger states.
+
+2.3 Control strategies:
+
+2.3.1 Pressure Range: Air pressure values range from 0 to 0.64 bar.
+2.3.2 Gripping Threshold: Fingers typically close and grip an object when the air pressure reaches approximately 0.4 bar.
+2.3.3 Smooth Transitions: Avoid sharp changes in air pressure for stability and precise control.
+2.3.4 Force Modulation: 
+    a) Adjusting real-time air pressure for each finger enables fine-grained control of the gripping force.
+    b) Higher air pressure results in greater force applied toward the object.
+2.3.5 Finger Control: Independent control of the Thumb (TH), First Finger (FF), and Middle Finger (MF) allows for precise manipulation.
+2.3.6 Common Operations:
+    a) Gripping (Grasping): Securely hold objects by inflating all active fingers to ~0.4 bar.
+    b) Rotating: Adjust coordinated signals for the TH and FF while keeping the MF inactive (pressure = 0 bar).
+    c) Swinging: Manipulate pressure across the fingers to tilt or swing the grasped object in a specific direction.
+2.3.7 Rotation Strategy:
+    a) Use TH and FF to rotate a cylindrical object.
+    b) Maintain a stable grip pressure, averaging 0.3 to 0.4 bar for both fingers.
+    c) Keep the MF inactive (0 bar pressure).
+    d) Introduce a __0.5-cycle phase difference and an amplitude difference (0.15 ~ 0.25 bar)  between the TH and FF signals__.
+    e) __Larger average pressure and amplitude in the TH__ signal rotates the object __toward the TH__.
+    f) __Larger average pressure and amplitude in the FF__ signal rotates the object __toward the FF__.
+    
+2.3.8 Swinging Strategy:
+    a) Adjust pressure among the fingers to swing the object:
+    b) Toward __FF/MF__: Increase pressure on the __TH and MF__. Largely decrease pressure on the __FF__.
+    c) Toward __TH__: Increase pressure on the __FF__. Largely decrease pressure on the __TH and MF__.
+

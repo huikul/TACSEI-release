@@ -1,0 +1,19 @@
+3. Task description:
+Generate a signal sequence for each finger (Thumb - TH, First Finger - FF, and Middle Finger - MF) to gradually hold an object and then slowly release it. 
+
+3.1 Signal Arrays:
+Save the air pressure values for each finger in separate arrays:
+    a) sig_th for the Thumb
+    b) sig_ff for the First Finger
+    c) sig_mf for the Middle Finger
+    d) return only excutable Python code to generate the sequences, without useless strings.
+
+3.2 Sequence Properties:
+    a) Each sequence must contain exactly 200 data points.
+    b) Air pressure values should remain within the range of 0 to 0.64 bar.
+
+3.3 Expected Behavior:
+    a) Gradually increase air pressure to securely hold the object.
+    b) Maintain a stable grip at peak pressure (around 0.4 bar) for a short duration.
+    c) Slowly decrease pressure to release the object.
+    d) Smooth the control signal after generation.

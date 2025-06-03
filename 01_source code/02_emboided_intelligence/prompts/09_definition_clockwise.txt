@@ -1,0 +1,12 @@
+Definitions of clockwise and counterclockwise motions from the camera perspective:
+
+__Clockwise motion__: The reference symbol rotates in the sequence of positions: __top-right-down-left-top__, completing the circular motion.
+__Counterclockwise motion__: The reference symbol rotates in the sequence of positions: __top-left-down-right-top__, completing the circular motion.
+
+__Steps to Analyze:__
+    a) Identify a fixed symbol or feature on the object that moves consistently across the frames.
+    b) Observe the rotation of this symbol relative to the top, left, right, and bottom sides of the frame.
+    c) Match the observed motion to the definitions of clockwise or counterclockwise.
+    
+    
+    

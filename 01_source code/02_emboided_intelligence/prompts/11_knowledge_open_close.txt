@@ -1,0 +1,6 @@
+There are two cases for the bottle cap operation:
+
+1. **Opening**: The bottle cap is **initially on the bottle**, and is **finally removed from the bottle** .
+
+2. **Closing**: The bottle cap is **initially not on the bottle**, and **finally added to bottle**.
+

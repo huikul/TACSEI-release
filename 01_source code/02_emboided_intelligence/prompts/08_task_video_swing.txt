@@ -1,0 +1,28 @@
+3. Task description:
+Based on the demostration result, generate signal sequences for each finger—Thumb (TH), First Finger (FF), and Middle Finger (MF)—to __swing__ an object __clockwise or counterclockwise__.
+
+3.1 Signal Arrays:
+Save the air pressure values for each finger in separate arrays:
+    a) __sig_th for the Thumb__
+    b) __sig_ff for the First Finger__
+    c) __sig_mf for the Middle Finger__
+    d) Return only excutable Python code to generate the sequences, without useless strings.
+
+3.2 Sequence Properties:
+    a) The length of signal sequence for each finger must be the 200.
+    b) Air pressure values should remain within the range of 0 to 0.64 bar.
+    c) Smooth the control signal after generation.
+
+3.3 Considering the space relationship between the soft hand and object:
+    a) __To swing clockwise: Swing toward the First Finger (FF)__.
+    b) __To swing counterclockwise: Swing toward the Thumb (TH)__.
+    c) Using the __Swinging Strategy__ in previous prompt in __2.3.8__ to achieve the swinging.
+    
+3.4 Expected Behavior:
+    a) Gradually increase air pressure for all fingers to grip the object.
+    b) Maintain the pose for a short duration.
+    c) Adjust air pressure to __swing the object clockwise or counterclockwise as the demostration result__.
+    d) Maintain the pose until the end.
+    
+    
+    

@@ -1,0 +1,20 @@
+3. Task description:
+Generate a signal sequence for each finger (Thumb - TH, First Finger - FF, and Middle Finger - MF) to rotate a cynlinder object towards the thumb (TH).
+
+3.1 Signal Arrays:
+Save the air pressure values for each finger in separate arrays:
+    a) sig_th for the Thumb
+    b) sig_ff for the First Finger
+    c) sig_mf for the Middle Finger
+    d) return only excutable Python code to generate the sequences, without useless strings.
+
+3.2 Sequence Properties:
+    a) The length of signal sequence for each finger must be the 500.
+    b) Air pressure values should remain within the range of 0 to 0.64 bar.
+    c) The signal sequences for related fingers must contain cyclic variations in air pressure.
+    d) Each cycle must consist of 20 data points for smooth air pressure modulation.
+    
+    
+3.3 Expected Behavior:
+    a) Introduce cyclic variations in the air pressure of TH and FF to generate rotational torque, maintaining grip stability.
+    b) Ensure the force applied by the TH and FF is coordinated to rotate the object toward the TH.

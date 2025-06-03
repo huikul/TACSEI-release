@@ -1,0 +1,5 @@
+1. All markers, labels and symbols on the object rotate towards the same direction with the object.
+
+2. **Clockwise** means that the reference symbol **rotates in the sequence top-right-down-left-top**. 
+3. On the contrary，**Counterclockwise** means that the reference symbol **rotates in the sequence of top-left-down-right-top**.
+
